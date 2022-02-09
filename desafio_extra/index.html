@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Balle Peoples</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Concert+One:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../globals.css" />
+    <link rel="stylesheet" href="./styles.css" />
+
+    <!-- Page script -->
+    <script type="module" src="./index.js"></script>
+  </head>
+
+  <body>
+    <!-- Aside -->
+    <aside class="navigation">
+      <a class="navigation__link disabled" href="/desafio_01/index.html"
+        >Desafio 01</a
+      >
+      <a class="navigation__link disabled" href="/desafio_02/index.html"
+        >Desafio 02</a
+      >
+      <a class="navigation__link disabled" href="/desafio_03/index.html"
+        >Desafio 03</a
+      >
+      <a class="navigation__link" href="/desafio_extra/index.html"
+        >Desafio Extra</a
+      >
+    </aside>
+
+    <main>
+      <!-- Form -->
+      <form class="form">
+        <h1 class="form__title">Digite os dados do usuário</h1>
+
+        <div class="input-group">
+          <label class="input-group__label" for="name">Nome</label>
+          <input class="input-group__input" type="text" name="name" id="name" />
+        </div>
+
+        <div class="input-group">
+          <label class="input-group__label" for="age">Idade</label>
+          <input class="input-group__input" type="number" name="age" id="age" />
+        </div>
+
+        <div class="input-group">
+          <label class="input-group__label" for="skills">Habilidades</label>
+          <input
+            class="input-group__input"
+            type="text"
+            name="skills"
+            id="skills"
+          />
+        </div>
+
+        <button class="form__button" type="submit">Cadastrar usuário</button>
+      </form>
+
+      <!-- Live timeline -->
+      <ul class="users"></ul>
+    </main>
+  </body>
+</html>

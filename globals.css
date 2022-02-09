@@ -1,0 +1,38 @@
+:root {
+  --background: #2f2325;
+  --background-alt: #483636;
+  --input-background: rgba(255, 242, 231, 0.7);
+
+  --white: #ffffff;
+  --beige: #fff2e7;
+  --blue: #97d4d9;
+  --blue-light: #b3dfd3;
+  --yellow: #efc764;
+}
+
+* {
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+}
+
+body,
+button,
+input,
+textarea {
+  font-family: "Concert One", sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--beige);
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: var(--blue);
+}
