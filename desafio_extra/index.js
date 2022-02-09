@@ -24,6 +24,7 @@ function main() {
   const usersCollection = collection(database, "users");
 
   let isLoading = false;
+  let isFirstRender = true;
 
   formElem.addEventListener("submit", handleFormSubmit);
 
@@ -85,7 +86,9 @@ function main() {
 
   function addUserInfo(user) {
     const elem = generateUserInfoElement(user);
-    usersElem.innerHTML = elem + usersElem.innerHTML;
+    usersElem.innerHTML = isFirstRender ? elem : usersElem.innerHTML + elem;
+
+    isFirstRender = false;
   }
 
   function generateUserInfoElement(user) {
