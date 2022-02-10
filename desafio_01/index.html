@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-    <title>Tecnologia da Semana JS - Desafio Extra</title>
+    <title>Tecnologia da Semana JS - Desafio 01</title>
     <!-- TODO: add more meta tags -->
 
     <meta charset="UTF-8" />
@@ -51,37 +51,36 @@
 
     <main>
       <form class="form">
-        <h1 class="form__title">Digite os dados do usuário</h1>
-
         <div class="input-group">
-          <label class="input-group__label" for="name">Nome</label>
+          <label class="input-group__label" for="name">Qual seu nome?</label>
           <input class="input-group__input" type="text" name="name" id="name" />
         </div>
 
         <div class="input-group">
-          <label class="input-group__label" for="age">Idade</label>
+          <label class="input-group__label" for="age">Qual sua idade?</label>
           <input class="input-group__input" type="number" name="age" id="age" />
         </div>
 
         <div class="input-group">
-          <label class="input-group__label" for="skills">Habilidades</label>
+          <label class="input-group__label" for="learn"
+            >O que está aprendendo?</label
+          >
           <input
             class="input-group__input"
             type="text"
-            name="skills"
-            id="skills"
+            name="learn"
+            id="learn"
           />
         </div>
 
         <button class="form__button" type="submit">Cadastrar usuário</button>
       </form>
 
-      <!-- Live timeline -->
-      <ul class="users">
-        <li class="warn">
-          <span>Carregando dados...</span>
-        </li>
-      </ul>
+      <h1 class="output">
+        Olá <span id="name-value">??</span>, você tem
+        <span id="age-value">??</span> anos e está aprendendo
+        <span id="learn-value">??</span>!
+      </h1>
     </main>
   </body>
 </html>
