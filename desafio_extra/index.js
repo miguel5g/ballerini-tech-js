@@ -42,8 +42,7 @@ function main() {
     };
 
     if (!user.name || !user.age || !user.skills) {
-      alert("Preencha todos os campos");
-      return;
+      return alert("Preencha todos os campos");
     }
 
     saveToFirestore(user)
@@ -51,7 +50,6 @@ function main() {
         addUserInfo(user);
         event.target.reset();
       })
-      .catch(() => {})
       .finally(() => {
         isLoading = false;
       });
@@ -86,6 +84,7 @@ function main() {
 
   function addUserInfo(user) {
     const elem = generateUserInfoElement(user);
+    
     usersElem.innerHTML = isFirstRender ? elem : usersElem.innerHTML + elem;
 
     isFirstRender = false;
